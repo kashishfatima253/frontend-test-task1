@@ -3,9 +3,7 @@
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  /* height: 800px; */
   background-image: linear-gradient(#E0E0E0,#FFFFFF);
-  /* E0E0E0 FFFFFF */
   overflow: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,5 +14,4 @@
 
 body{
   margin: 0;
-  height: 800px;
 }
