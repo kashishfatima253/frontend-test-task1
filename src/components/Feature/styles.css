@@ -1,0 +1,24 @@
+.feature-bubble{
+    padding: 0.5rem 3rem;
+    background-color: #E6EAF7;
+    border-radius: 100px 50px 50px 0;
+}
+
+.feature-bubble p{
+    margin: 0;
+    padding: 0;
+    color: #0429AD;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.feature-border{
+    padding: 1px;
+    position: relative;
+    background: linear-gradient(to right, #0429AD, #AD04A6);
+    border-radius: 100px 50px 50px 0;
+}
+
+.middle-div{
+    background-color: red;
+}
