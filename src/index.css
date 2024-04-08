@@ -4,7 +4,10 @@
   line-height: 1.5;
   font-weight: 400;
   background-image: linear-gradient(#E0E0E0,#FFFFFF);
-  overflow: hidden;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  /* max-height: 800px; */
+  /* height: 100vh; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -12,6 +15,9 @@
   
 }
 
+
+
 body{
   margin: 0;
+  
 }

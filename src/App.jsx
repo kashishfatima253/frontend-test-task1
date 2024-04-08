@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 function App() {
  return(
   <Router>
-    <div className="main-section">
+    <div className="main">
       <Navbar/>
 
       <Routes>

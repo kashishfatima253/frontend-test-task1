@@ -1,6 +1,9 @@
 import data from "../../constants/images/data"
 import './styles.css'
 import { NavLink } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
+import { useState } from "react";
+
 
 const navLinks = [
   {
@@ -22,15 +25,17 @@ const navLinks = [
 ]
 
 const Navbar = () => {
-
+  const [openMenu, setOpenMenu] = useState(true)
   return (
-    <div className="navbar-div">
+    <div className={(openMenu ? "navbar-div" : "hide-nav") }>
         <div className="nav-logo">
             <img src={data.ps5Logo} alt=""/>
-            
+            <button className="menu-button" onClick={()=>{setOpenMenu((prev)=>!prev)}}>
+              <IoMenu fontSize={30}/>
+            </button>
         </div>
 
-        <ul>
+        <ul className={(openMenu ? "desktop-nav-ul" : "mobile-nav-ul") }>
             {
               navLinks.map((navLink)=>{
                 return(
@@ -47,10 +52,15 @@ const Navbar = () => {
             }
         </ul>
 
-        <div className="buttons">
+        <div className={(openMenu ? "buttons" : "mobile-nav-ul") }>
             <button type="" className="btn login-btn">Login</button>
             <button type="" className="btn play-btn">Play</button>
         </div>
+
+       
+            
+
+           
     </div>
   )
 }

@@ -20,6 +20,19 @@
     
 }
 
-.middle-div{
-    background-color: red;
+@media (max-width:768px) {
+    .feature-bubble{
+        padding: 0.2rem;
+        
+    }
 }
+@media (max-width:425px) {
+    /* .feature-bubble{
+        padding: 0;
+        
+    } */
+    .feature-bubble p{
+        font-size: 10px;
+    }
+}
+
